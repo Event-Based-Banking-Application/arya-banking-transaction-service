@@ -1,0 +1,64 @@
+[
+  {
+    "service": "Transaction Service",
+    "issues": [
+      {
+        "task": "Transfer money between accounts",
+        "description": "Allow fund transfers with proper validations, REST or event-driven.",
+        "labels": [
+          "transaction",
+          "api"
+        ]
+      },
+      {
+        "task": "View transaction history",
+        "description": "Paginated API to fetch user transaction history.",
+        "labels": [
+          "transaction",
+          "api"
+        ]
+      },
+      {
+        "task": "Emit TransactionInitiated",
+        "description": "Emit event when transaction starts with transaction ID.",
+        "labels": [
+          "transaction",
+          "event"
+        ]
+      },
+      {
+        "task": "Emit TransactionSuccessful / Failed",
+        "description": "Emit event signaling transaction result success or failure.",
+        "labels": [
+          "transaction",
+          "event"
+        ]
+      },
+      {
+        "task": "Check account balance before debit",
+        "description": "Verify sufficient balance before debit occurs.",
+        "labels": [
+          "transaction",
+          "validation"
+        ]
+      },
+      {
+        "task": "Persist transaction logs",
+        "description": "Store transaction data in MongoDB for historical tracking.",
+        "labels": [
+          "transaction",
+          "database"
+        ]
+      },
+      {
+        "task": "Fraud detection (basic rules)",
+        "description": "Detect suspicious activity and emit alerts.",
+        "labels": [
+          "transaction",
+          "fraud",
+          "event"
+        ]
+      }
+    ]
+  }
+]
